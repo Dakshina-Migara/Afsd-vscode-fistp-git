@@ -11,3 +11,13 @@
     width: 150px;
     background-color: aquamarine;
 }
+
+/* chat bot */
+#chatpoto{
+    width: 299px;
+    height: 148px;
+    left: 976px;
+    top: 439px;
+    position: absolute;
+    background-image: url(../assets/chat-c-1.png);
+}

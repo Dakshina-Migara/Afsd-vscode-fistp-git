@@ -20,3 +20,11 @@ function mouseOut(){
    document.getElementById('mouseEvent').style.backgroundColor = 'red';
    document.getElementById('mouseEvent').style.borderRadius = '0px';
 }
+
+// chat poto
+function mouseOut1(){
+   document.getElementById('chatpoto').style.backgroundImage = "url(../assets/chat-c-1.png)";
+}
+function mousein1(){
+   document.getElementById('chatpoto').style.backgroundImage = "url(../assets/chat-c.png)";
+}
