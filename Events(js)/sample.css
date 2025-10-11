@@ -21,3 +21,10 @@
     position: absolute;
     background-image: url(../assets/chat-c-1.png);
 }
+
+/* key event */
+#keyEvent{
+    height: 30px;
+    width: 50px;
+    background-color: aquamarine;
+}
