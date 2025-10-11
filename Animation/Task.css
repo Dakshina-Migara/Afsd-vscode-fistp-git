@@ -1,0 +1,43 @@
+.background {
+    background-color: #21b674;
+    height: 400px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.button {
+    height: 50px;
+    width: 110px;
+    text-align: center;
+    border: white solid 1px;
+    color: #21b674;
+    margin-left: 45%;
+}
+
+.button:hover {
+    background-color: white;
+    color: #21b674;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-2px);
+}

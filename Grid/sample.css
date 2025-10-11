@@ -1,0 +1,21 @@
+.item {
+    background-color: yellowgreen;
+    padding: 17px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    /* (auto kiyanne column ekaka eka width ekak) */
+}
+
+.line1 {
+    /* meken merge karla thama hadaganna puluwan11112 */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}

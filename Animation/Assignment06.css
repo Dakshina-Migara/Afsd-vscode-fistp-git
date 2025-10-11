@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;   
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sky {
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    z-index: -3;
+}
+
+@keyframes animation1 {
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position-x: -1000px;
+    }
+
+}
+
+.city {
+    position: absolute;
+    top: 191px;
+    width: 100%;
+    height: 250px;
+    background: url("../assets/assets for video car/assets/city.png") repeat-x;
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: cover;
+    z-index: -2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes animation3 {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -1000px;
+    }
+}
+
+.road {
+    position: absolute;
+    top: 440px;
+    height: 190px;
+    width: 100%;
+    background: url("../assets/assets for video car/assets/road.jpg") repeat-x;
+    animation-name: animation3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    animation-timing-function: linear;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes animation2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+
+        transform: rotate(360deg);
+    }
+}
+
+.car {
+    position: absolute;
+    margin-top: 410px;
+    height: 150px;
+    width: 350px;
+    flex-wrap: wrap;
+    z-index: 1;
+    display: flex;
+}
+
+.wheel1 {
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    margin-top: 490px;
+    margin-left: 203px;
+    animation-name: animation2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.wheel2 {
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    margin-top: 490px;
+    margin-left: 3px;
+    margin-right: 228px;
+    animation-name: animation2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+}

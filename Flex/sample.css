@@ -1,0 +1,61 @@
+.Flex1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.items {
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 4px;
+    border: 1px solid black;
+    width: 60px;
+}
+
+.Flex2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Flex3 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    /* content eke size eka wenas wenne ne, content eka yatata yanne */
+}
+
+.wrap2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* content eke size eka samanai, conetent eka udata yanne yatata neme */
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* line ekama meddata yanawa */
+}
+
+.around {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* ekama element eke depeththe dura samanai */
+}
+
+.between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* ekama line eke item 2 athara dura samanai */
+}

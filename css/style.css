@@ -1,0 +1,62 @@
+.title2 {
+    background-color: blue;
+    color: black;
+}
+
+.btn {
+    background-color: darkkhaki;
+    color: black;
+    border-color: black;
+    height: 60px;
+    width: 100px;
+    font-size: 25px;
+    border-width: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-style: ridge;
+}
+
+#acpt1 {
+    border: 2px solid black;
+}
+
+.bbb {
+    font-style: italic;
+    box-shadow: 2px 3px 6px black;
+}
+
+h3 {
+    background-color: green;
+}
+
+/* * { */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* font-style: italic; */
+/* } */
+
+div>h4 {
+    background-color: brown;
+}
+
+#mmm{
+    background-color: aqua;
+}
+
+.hhh{
+    background-color: black;
+}
+
+#njnj{
+
+background-color: aquamarine;
+}
+
+.ses{
+    background-color: rgb(130, 28, 30) !important;
+}
+
+.box {
+     /* background-color: blue; margin: 100px; */
+     background-color: aquamarine ; padding: 100px; 
+}

@@ -1,0 +1,38 @@
+.main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.less {
+    background-color: aqua;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1px;
+}
+
+.nav {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    height: 300px;
+}
+
+.right {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}

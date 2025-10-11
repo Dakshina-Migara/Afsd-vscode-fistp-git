@@ -1,0 +1,68 @@
+.animation {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+}
+
+@keyframes animation {
+    /* from {
+        left: 0px;
+        top: 30px;
+        background-color: aliceblue;
+        transform: rotate(0deg);
+    } */
+
+    /* to {
+        left: px;
+        top: 30px;
+        background-color: aqua;
+        transform: rotate(360deg);
+    } */
+    0% {
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        top: 100px;
+        left: 100px;
+    }
+
+    50% {
+        top: 0px;
+        left: 200px;
+    }
+
+    75% {
+        top: 100px;
+        left: 300px;
+    }
+
+    100% {
+        top: 0px;
+        left: 400px;
+        transform: rotate(360deg);
+    }
+}
+.button{
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.button:hover{
+    background-color: aqua;
+    width: 103px;
+    height: 103px;
+    cursor: pointer;
+    /* transition-duration: 1s; */
+    color: black;
+}

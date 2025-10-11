@@ -1,0 +1,31 @@
+.div1 {
+    background-color: aqua;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px 3px black;
+}
+
+.image {
+    width: 100%;
+}
+
+.shadow {
+    background-color: rgb(24, 23, 23);
+    width: 800px;
+    height: 500px;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 47px;
+    top: 370px;
+    left: 20px;
+}
+

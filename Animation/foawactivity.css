@@ -1,0 +1,90 @@
+.container {
+    width: 450px;
+    height: 270px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 0px;
+    display: flex;
+    position: absolute;
+    left: 190px;
+    top: 100px;
+}
+
+.container:hover {
+    background-color: #095bcc;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+}
+.container:hover .button{
+    background-color: #095bcc;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+}
+
+.img-container {
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+}
+
+.creditcard {
+    height: 227px;
+    overflow: hidden;
+    margin-top: 31px;
+    margin-left: -131px;
+    width: 316px;
+}
+
+h2 {
+    position: absolute;
+    left: 206px;
+    top: 50px;
+    display: flex;
+}
+
+ul>li {
+    position: absolute;
+    left: 210px;
+    top: 140px;
+    font-size: 15px;
+}
+
+.button {
+    position: absolute;
+    left: 210px;
+    top: 200px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    color: white;
+    border: white solid 1px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #5e111f;
+    color: white;
+    border: white solid 1px;
+}
+
+.fa-arrow-right {
+    margin-left: 137px;
+    height: 70px;
+    top: 217px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.fa-arrow-right:hover {
+    color: white;
+
+}

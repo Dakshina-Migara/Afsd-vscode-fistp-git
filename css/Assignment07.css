@@ -1,0 +1,885 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/* uda */
+.container {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+/* nav bar eka */
+.sticky-top {
+    position: sticky;
+    top: 0px;
+}
+
+.navbar {
+    width: 100%;
+    top: -10px;
+}
+
+.logo-section {
+    background-color: transparent;
+    padding: 20px 100px;
+}
+
+.logo-section.scrolled {
+    background-color: #803434;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-section img {
+    height: 80px;
+    object-fit: contain;
+}
+
+.menu-section {
+    background-color: #00a859;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbarLink {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.link {
+    color: white !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+/* background image */
+.shadow{
+    background-color: #000000;
+    opacity: 0.2;
+    position: absolute;
+}
+
+
+.div1 img {
+    height: auto;
+    object-fit: cover;
+    margin-top: -146px;
+}
+
+
+/* poto left grid */
+.sir-poto {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* right text grid eka */
+.col-md-7 {
+    overflow: hidden;
+    height: 520px;
+    position: relative;
+    background-color: white;
+}
+
+.div01 {
+    height: 200px;
+    margin-top: 57px;
+}
+
+.job-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.div02 {
+    height: 200px;
+    margin-top: 57px;
+}
+
+.hybrid-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.div03 {
+    height: 200px;
+    margin-top: 12px;
+}
+
+.job-place-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.div04 {
+    height: 200px;
+    margin-top: 12px;
+}
+
+.industry-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+/* poto with text */
+
+.clearfix {
+    margin-top: 45px;
+    padding: 40px;
+}
+
+.learn-more {
+    background-color: white;
+    color: #00a859;
+    border: solid 1px #00a859;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.learn-more:hover {
+    background-color: #00a859;
+    color: #fff;
+}
+
+/* programes head*/
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 0 20px;
+}
+
+.see-all {
+    border: 1px solid #00a859;
+    color: #00a859;
+    background-color: white;
+    padding: 7px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.see-all:hover {
+    background-color: #00a859;
+    color: #fff;
+}
+
+/* programs */
+.row {
+    padding: 20px;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.card-div1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card-button {
+    color: #ffffff;
+    background-color: #00a859;
+    border: 1px solid #00a859;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.card-button:hover {
+    color: #00a859;
+    background-color: #fff;
+}
+
+.read-more {
+    color: #00a859;
+    border: none;
+    background-color: white;
+    margin-right: 23px;
+    margin-top: 10px;
+}
+
+/* register button */
+.register {
+    background-color: #00a859;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    color: white;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.job100 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-left: 320px;
+    height: 50px;
+    width: 100%;
+}
+
+.octobe-intake {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 82px;
+    margin-left: 220px;
+    height: 50px;
+    width: 100%;
+}
+
+.join-now01 {
+    align-items: center;
+    text-decoration: none;
+    height: 100px;
+    position: relative;
+    margin-top: -50px;
+}
+
+.join-now {
+    background-color: white;
+    color: #00a859;
+    border: solid 1px white;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.join-now:hover {
+    background-color: #00a859;
+    color: #fff;
+}
+
+
+
+/* sucess stories */
+.img-fluid {
+    max-height: 600px;
+    width: 100%;
+}
+
+.container03 {
+    width: 100%;
+    margin-top: -519px;
+}
+
+.card-body {
+    height: 400px;
+}
+
+.place-btn {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00a859;
+    margin-top: 178px;
+}
+
+.place-btn::after {
+    background-color: white;
+    height: 60px;
+    width: 60px;
+}
+
+.fa {
+    height: 80px;
+    width: 80px;
+}
+
+/* events header */
+.section-event1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-top: 100px;
+}
+
+.section-event {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.line2 {
+    flex: 1;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 0 20px;
+}
+
+.see-all2 {
+    border: 1px solid #00a859;
+    color: #00a859;
+    background-color: white;
+    padding: 7px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.see-all2:hover {
+    background-color: #00a859;
+    color: #fff;
+}
+
+
+/* events */
+.card-body12 {
+    height: 100px;
+}
+
+/* latest news header */
+
+.section-news1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-top: 60px;
+}
+
+.section-news {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.line3 {
+    flex: 1;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 0 20px;
+}
+
+.see-all3 {
+    border: 1px solid #00a859;
+    color: #00a859;
+    background-color: white;
+    padding: 7px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.see-all3:hover {
+    background-color: #00a859;
+    color: #fff;
+}
+
+/* latest news */
+
+.card-body21 {
+    height: 220px;
+    border: none;
+}
+
+.card1 {
+    border: none;
+}
+
+.card1:hover {
+    cursor: pointer;
+}
+
+.card1 .card-title {
+    color: #00a859;
+}
+
+.card1 .btn {
+    background-color: #00a859;
+    border-radius: 0px;
+    border: #00a859 1px solid;
+}
+
+.card1 .btn:hover {
+    background-color: white;
+    color: #00a859;
+    border: white;
+}
+
+
+/* footer */
+.container09 {
+    background-color: #182b45;
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+}
+
+.container09 .row p {
+    color: gray;
+    margin-left: 74px;
+}
+
+.container09 .hi .fw-bolder {
+    color: white;
+}
+
+.container09 .hi .h61 {
+    color: gray;
+}
+
+.container09 .row .text-start {
+    margin-left: 90px;
+}
+
+
+/* foot div */
+.devider02 {
+    flex: 1;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.container09 .row2 h5 {
+    color: gray;
+    margin-top: 10px;
+}
+
+.container09 .row2 i {
+    height: 20px;
+    width: 20px;
+    justify-content: space-between;
+    margin: 0px 10px;
+    color: #00a859;
+    margin-top: 14px;
+}
+
+
+
+
+/* responces */
+/* ===== Extra small screen fix (375px and below) ===== */
+@media (max-width: 375px) {
+
+    /* Navbar */
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .logo-section img {
+        height: 50px;
+    }
+
+    /* Hero Image */
+    .div1 img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    /* Intro Section (Sir photo + icons) */
+    .sir-poto {
+        max-width: 280px;
+    }
+
+    .job-image,
+    .hybrid-image,
+    .job-place-image,
+    .industry-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fw-bold {
+        font-size: 14px;
+    }
+
+    /* About section */
+    .learn-more {
+        display: block;
+        margin: 10px auto;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* Section Headers */
+    .section-header,
+    .section-event1,
+    .section-news1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .section-title,
+    .section-event,
+    .section-news {
+        font-size: 20px;
+    }
+
+    .see-all,
+    .see-all2,
+    .see-all3 {
+        margin-top: 8px;
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    /* Cards */
+    .card-body h5 {
+        font-size: 16px;
+    }
+
+    .card-button,
+    .read-more {
+        font-size: 12px;
+    }
+
+    /* Register Section */
+    .register h2 {
+        font-size: 20px;
+    }
+
+    .register h3 {
+        font-size: 16px;
+    }
+
+    .join-now {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* Success Stories */
+    .container03 {
+        margin-top: -60px;
+    }
+
+    .place-btn {
+        font-size: 18px;
+        padding: 10px 14px;
+    }
+
+    /* Footer */
+    .acpt-logo01 {
+        width: 120px;
+    }
+
+    footer h4 {
+        font-size: 16px;
+    }
+
+    footer h6 {
+        font-size: 12px;
+    }
+
+    .row2 h5 {
+        font-size: 12px;
+    }
+
+    .row2 i {
+        font-size: 16px;
+        margin: 0 3px;
+    }
+}
+
+
+/* ===== Tablet (up to 768px) ===== */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        margin: 6px 0;
+    }
+
+    .logo-section img {
+        height: 60px;
+    }
+
+    /* Hero */
+    .div1 img {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    /* Intro Section (Sir photo + Features) */
+    .sir-poto {
+        max-width: 320px;
+        margin: 0 auto 20px;
+    }
+
+    .fw-bold {
+        font-size: 16px;
+    }
+
+    .job-image,
+    .hybrid-image,
+    .job-place-image,
+    .industry-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* About Section */
+    .learn-more {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 12px auto;
+    }
+
+    /* Section Headers */
+    .section-header,
+    .section-event1,
+    .section-news1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .section-title,
+    .section-event,
+    .section-news {
+        font-size: 24px;
+    }
+
+    .see-all,
+    .see-all2,
+    .see-all3 {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    /* Cards */
+    .card-body h5 {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card-button,
+    .read-more {
+        font-size: 14px;
+    }
+
+    /* Register Section */
+    .register h2 {
+        font-size: 24px;
+    }
+
+    .register h3 {
+        font-size: 18px;
+    }
+
+    .join-now {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Success Stories */
+    .container03 {
+        margin-top: -120px;
+    }
+
+    .place-btn {
+        font-size: 20px;
+        padding: 12px 16px;
+    }
+
+    /* Footer */
+    .acpt-logo01 {
+        width: 140px;
+    }
+
+    footer h4 {
+        font-size: 18px;
+    }
+
+    footer h6 {
+        font-size: 14px;
+    }
+
+    .row2 h5 {
+        font-size: 13px;
+    }
+
+    .row2 i {
+        font-size: 18px;
+    }
+}
+
+
+/* ===== Laptop (up to 1024px) ===== */
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    .navbar-nav .nav-link {
+        font-size: 19px;
+        margin: 0 8px;
+    }
+
+    .logo-section img {
+        height: 65px;
+    }
+
+    /* Hero */
+    .div1 img {
+        height: 350px;
+        object-fit: cover;
+    }
+
+    /* Intro Section */
+    .sir-poto {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .fw-bold {
+        font-size: 18px;
+    }
+
+    .job-image,
+    .hybrid-image,
+    .job-place-image,
+    .industry-image {
+        width: 65px;
+        height: 65px;
+    }
+
+    /* About Section */
+    .learn-more {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    /* Section Headers */
+    .section-title,
+    .section-event,
+    .section-news {
+        font-size: 26px;
+    }
+
+    .see-all,
+    .see-all2,
+    .see-all3 {
+        font-size: 14px;
+    }
+
+    /* Cards */
+    .card-body h5 {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .card-button,
+    .read-more {
+        font-size: 14px;
+    }
+
+    /* Register Section */
+    .register h2 {
+        font-size: 28px;
+    }
+
+    .register h3 {
+        font-size: 20px;
+    }
+
+    .join-now {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    /* Success Stories */
+    .container03 {
+        margin-top: -150px;
+    }
+
+    .place-btn {
+        font-size: 22px;
+        padding: 14px 18px;
+    }
+
+    /* Footer */
+    .acpt-logo01 {
+        width: 150px;
+    }
+
+    footer h4 {
+        font-size: 18px;
+    }
+
+    footer h6 {
+        font-size: 14px;
+    }
+
+    .row2 h5 {
+        font-size: 14px;
+    }
+
+    .row2 i {
+        font-size: 20px;
+    }
+}
