@@ -1,5 +1,13 @@
-#clicker{
+/* button eka click karaddi */
+#clicker {
     height: 80px;
     width: 80px;
+    background-color: aquamarine;
+}
+
+/* mouse eka move karaddi */
+#mouseEvent {
+    height: 150px;
+    width: 150px;
     background-color: aquamarine;
 }
