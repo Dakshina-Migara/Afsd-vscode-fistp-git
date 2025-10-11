@@ -149,10 +149,6 @@ Additionnumbers();
 
 
 
-
-
-
-
 //..............functions with parameters...........
 
 function parametersnumbers(n1, n2) {  //parameters
@@ -160,9 +156,6 @@ function parametersnumbers(n1, n2) {  //parameters
 }
 parametersnumbers(173457164, 2072376127); //arguments
 parametersnumbers(10, 20)
-
-
-
 
 
 //..............functions with return...........
@@ -256,3 +249,16 @@ nameFunction('C');
 nameFunction('D');
 nameFunction('E');
 nameFunction('K');
+
+
+
+// array sample
+const sample = [10,20,30];
+function baltotarray(arrr) {
+    var total = 0;
+    for (let i = 0; i < arrr.length; i++) {
+        total += arrr[i];
+    }
+    return total;
+}
+console.log(baltotarray(sample));
