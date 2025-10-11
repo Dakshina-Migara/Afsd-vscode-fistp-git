@@ -253,7 +253,7 @@ nameFunction('K');
 
 
 // array sample
-const sample = [10,20,30];
+const sample = [10, 20, 30];
 function baltotarray(arrr) {
     var total = 0;
     for (let i = 0; i < arrr.length; i++) {
@@ -262,3 +262,72 @@ function baltotarray(arrr) {
     return total;
 }
 console.log(baltotarray(sample));
+
+
+// Object= 
+//   properties = thiyena dewal
+//   Methods = karanna puluwan dewal
+
+// object sample
+
+const car = {
+    brand: 'BMW',   //properties
+    color: 'red',    //properties
+    drive: function () { console.log('run') } //methods
+}
+
+console.log(car.brand);
+car.drive();
+console.log(car.color);
+
+car.wheelCount = 4;
+console.log(car);
+
+// Arrays
+
+const Arrays = [45, 98, 'saman', {}, []];
+console.log(Arrays[2]);
+
+
+
+// Arrays--> Push method
+
+const child = ['dasun','nawam','medin'];
+
+console.log(child);
+child.push('bak');
+console.log(child);
+
+
+// Arrays-->Pop method
+
+const child1 = ['dasun','nawam','medin','bak'];
+
+console.log(child1);
+child1.pop('bak');
+console.log(child1);
+
+
+// Arrays-->Shift method
+
+const child2 = ['dasun','nawam','medin','bak'];
+
+console.log(child2);
+child2.shift();
+console.log(child2);
+
+// Arrays-->Unshift method
+
+const child3 = ['dasun','nawam','medin','bak'];
+
+console.log(child3);
+child3.unshift('thiloka');
+console.log(child3);
+
+// Arrays-->Splice method
+
+const child4 = ['dasun','nawam','medin','bak'];
+
+console.log(child4);
+child4.splice(0,2,'thiloka');
+console.log(child4);
