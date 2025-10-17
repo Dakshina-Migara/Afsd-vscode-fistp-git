@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav bar eka */
+.div01 {
+    background-color: #5EB562;
+    height: 80px;
+}
+
+.div01 img {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* image card eka */
+
+.imagebox .card {
+    background-color: #5EB56233;
+    height: 440px;
+    margin-top: 30px;
+    border: none;
+    padding-top: 36px;
+}
+
+.card h5 {
+    color: #5EB562;
+}
+
+.card-title {
+    margin-left: 147px;
+}
+
+.rounded-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    margin-left: 112px;
+    margin-top: 20px;
+}
+
+.card-body .form-control {
+    margin-top: 40px;
+    width: 280px;
+    margin-left: 20px;
+    border: 1px solid #5EB562;
+}
+
+.button1 {
+    background-color: #5EB562;
+    border: none;
+    border-radius: 7px;
+    width: 82px;
+    height: 30px;
+    margin-left: 140px;
+    margin-bottom: 70px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
