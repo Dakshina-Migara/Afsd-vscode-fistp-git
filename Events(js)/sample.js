@@ -39,10 +39,13 @@ function keyEvent2() {
 }
 
 function keyEvent3() {
-   console.log('keyup')
+   console.log('keyup')z
 }
 
+
+// key show event
 function keyEvent4() {
    const key01 = document.getElementById('keyup1').value;
-   console.log(key01);
+   document.getElementById('inertext').innerText = key01
+   document.getElementById('divelop').innerHTML = `<h1></h1>`
 }
