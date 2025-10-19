@@ -39,7 +39,7 @@ function keyEvent2() {
 }
 
 function keyEvent3() {
-   console.log('keyup')z
+   console.log('keyup')
 }
 
 

@@ -5,3 +5,14 @@
 .card011 .form-control {
     margin: 30px;
 }
+
+.card011 label{
+    width: 300px;
+    margin-left: 300px;
+    font-weight: bold;
+}
+
+.card011 button{
+
+}
+
