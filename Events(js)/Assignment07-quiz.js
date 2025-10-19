@@ -64,24 +64,24 @@ let score = 0;
 let countdown;
 const timer = document.getElementById("timer");
 
-// Add click event listeners to answer options
+// answer options
 document.querySelectorAll(".answer-option").forEach((option) => {
   option.addEventListener("click", function () {
     const radio = this.querySelector('input[type="radio"]');
     radio.checked = true;
 
-    // Remove selected class from all options
+    // select eka remove karaganna
     document.querySelectorAll(".answer-option").forEach((opt) => {
       opt.classList.remove("selected");
     });
 
-    // Add selected class to clicked option
+    // select karanna
     this.classList.add("selected");
   });
 });
 
 function startTime() {
-  // Clear any existing timer
+  // time eka reset karanna
   if (countdown) {
     clearInterval(countdown);
   }
@@ -89,7 +89,7 @@ function startTime() {
   let timeLeft = 20;
   timer.classList.remove("warning");
 
-  // Update timer display immediately
+  // timer eka update wena eka
   let seconds = timeLeft % 60;
   timer.textContent = "00:" + (seconds < 10 ? "0" + seconds : seconds);
 
@@ -98,15 +98,15 @@ function startTime() {
     let seconds = timeLeft % 60;
     timer.textContent = "00:" + (seconds < 10 ? "0" + seconds : seconds);
 
-    // Add warning class when 5 seconds or less
+    //5s waladi warning wenna
     if (timeLeft <= 5 && timeLeft > 0) {
       timer.classList.add("warning");
     }
 
+      // time eka iwara unata passe ilaga prashenata yanna
     if (timeLeft < 0) {
       clearInterval(countdown);
       timer.textContent = "00:00";
-      // Auto move to next question when time runs out
       autoMoveNext();
     }
   }, 1000);
@@ -117,7 +117,6 @@ function autoMoveNext() {
   questionNumber++;
 
   if (questionNumber < questionarr.length) {
-    // Clear selection
     const selectedRadio = document.querySelector(
       'input[name="question"]:checked'
     );
@@ -145,7 +144,6 @@ function addQuestions() {
       questionarr[questionNumber].answers[i].text;
   }
 
-  // Start fresh timer for the new question
   startTime();
 }
 
@@ -169,9 +167,8 @@ function clickNext() {
   }
 
   questionNumber++;
-
+  // Clear karanawa time eka aluth ekata yaddi
   if (questionNumber < questionarr.length) {
-    // Clear the current timer before moving to next question
     clearInterval(countdown);
 
     selectedRadio.checked = false;

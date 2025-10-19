@@ -9,7 +9,7 @@ function calculateSum() {
     const sumDisplayElement = document.getElementById('subtotal1');
 
     if (sumDisplayElement) {
-        sumDisplayElement.innerText =  sum ;
+        sumDisplayElement.innerText = sum;
     } else {
         console.error("Error: Element with id 'sumDisplay' not found.");
     }
@@ -21,9 +21,20 @@ function calculateequal() {
     const input1Element = document.getElementById('inputNumber3').value;
     const input2Element = document.getElementById('inputNumber4').value;
 
-    if (input1Element.toLowerCase()==input2Element.toLowerCase()) {
-    document.getElementById('subtotal2').innerText = "equal";
+    if (input1Element.toLowerCase() == input2Element.toLowerCase()) {
+        document.getElementById('subtotal2').innerText = "equal";
     } else {
-       document.getElementById('subtotal2').innerText = " not equal";
+        document.getElementById('subtotal2').innerText = " not equal";
     }
+}
+
+
+// first letter capital
+function firstCapital() {
+    const input1Element = document.getElementById('inputNumber5').value;
+
+    if (input1Element.length > 0) {
+        const capitalizedText = input1Element.charAt(0).toUpperCase() + input1Element.slice(1);
+        document.getElementById('subtotal3').innerText = capitalizedText;
+    } 
 }
