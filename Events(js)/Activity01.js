@@ -117,3 +117,30 @@ function pushToArray() {
 function showArray() {
     document.getElementById("subtotal7").innerText = store;
 }
+
+
+// generate numbers
+const randomNumbers = [];
+const numberOfRandomNumbers = 50;
+
+window.onload = function () {
+    for (let i = 0; i < numberOfRandomNumbers; i++) {
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        randomNumbers.push(randomNumber);
+    }
+    document.getElementById("inputNumber10").value = randomNumbers;
+
+}
+function generateNumbers() {
+    let divider = Number(document.getElementById("inputNumber11").value);
+    let array1 = [];
+
+    for (let i = 0; i < randomNumbers.length; i++) {
+        if ((randomNumbers[i] % divider) === 0) {
+            array1.push(randomNumbers[i]);
+        }
+    }
+
+    document.getElementById("subtotal8").innerText = array1.join(', ');
+}
+
