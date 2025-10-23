@@ -16,6 +16,9 @@
     color: white;
 }
 
+#userName1{
+    color: white;
+}
 
 /* background image eka */
 .img {
@@ -70,7 +73,7 @@
     margin-left: 776px;
     margin-top: 66px;
     height: 28px;
-    width: 73px;
+    width: 100px;
     background-color: #5EB562;
     text-align: center;
     border-radius: 7px;

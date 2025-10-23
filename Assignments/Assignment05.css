@@ -13,7 +13,6 @@ body {
     background: #1e1e1e;
 }
 
-
 .container {
     display: flex;
     width: 100%;
@@ -32,7 +31,7 @@ body {
 }
 
 .logo {
-    background: url('../assets/red leaf.png')center center / cover;
+    background: url('../assets/red leaf.png') center center / cover no-repeat;
     height: 50px;
     width: 50px;
     margin-bottom: 21px;
@@ -59,9 +58,9 @@ form>input {
     opacity: 0.6;
 }
 
+/* Password box */
 .password-box {
     position: relative;
-
 }
 
 .password-box input {
@@ -86,6 +85,7 @@ form>input {
     color: #555;
 }
 
+/* Options */
 .options {
     display: flex;
     justify-content: space-between;
@@ -99,6 +99,7 @@ form>input {
     color: black;
 }
 
+/* Buttons */
 .btn {
     width: 100%;
     background: #ff4500;
@@ -116,6 +117,7 @@ form>input {
     background: #e03e00;
 }
 
+/* Divider */
 .divider {
     display: flex;
     align-items: center;
@@ -147,6 +149,7 @@ form>input {
     border-radius: 4px;
 }
 
+/* Google Button */
 .google-btn {
     width: 100%;
     padding: 12px;
@@ -165,6 +168,7 @@ form>input {
     width: 18px;
 }
 
+/* Signup */
 .signup {
     text-align: center;
     margin-top: 20px;
@@ -177,10 +181,39 @@ form>input {
     font-weight: 500;
 }
 
+/* Image box */
 .image-box {
     flex: 1.2;
-    background: url('../assets/assign05.jpg') center center/cover;
+    background: url('../assets/assign05.jpg') center center / cover no-repeat;
     object-fit: cover;
+}
+
+.input-group {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    background-color: #f1efef;
+    opacity: 0.6;
+}
+
+.input-group label {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease all;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -218,12 +251,11 @@ form>input {
         height: 100%;
         border-radius: 0;
         box-shadow: none;
-        background: url('../assets/assign05.jpg') no-repeat center center/cover;
+        background: url('../assets/assign05.jpg') no-repeat center center / cover;
     }
 
-
     .logo {
-        background: url('../assets/assign0501.png')center center/cover;
+        background: url('../assets/assign0501.png') center center / cover no-repeat;
         margin-left: 124px;
         height: 50px;
         width: 50px;
@@ -268,4 +300,19 @@ form>input {
     .signup a {
         color: rgb(244, 241, 241);
     }
+
+    .input-group label {
+        color: white;
+    }
+
+    .input-group input:focus+label,
+    .input-group input:not(:placeholder-shown)+label {
+        background: transparent;
+        color: white;
+        top: 12px;
+        left: 10px;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
 }

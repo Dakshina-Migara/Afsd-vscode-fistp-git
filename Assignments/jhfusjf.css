@@ -188,7 +188,6 @@ form>input {
     object-fit: cover;
 }
 
-/* Input Group (for floating labels on all screens) */
 .input-group {
     position: relative;
     margin: 10px 0;
@@ -217,7 +216,6 @@ form>input {
     transition: 0.3s ease all;
 }
 
-/* Responsive: Tablets */
 @media only screen and (max-width: 1024px) {
     .container {
         width: 100%;
@@ -241,7 +239,6 @@ form>input {
     }
 }
 
-/* Responsive: Mobile */
 @media only screen and (max-width: 767px) {
     body {
         background: none;
@@ -304,7 +301,6 @@ form>input {
         color: rgb(244, 241, 241);
     }
 
-    /* Floating labels on mobile */
     .input-group label {
         color: white;
     }
@@ -312,10 +308,11 @@ form>input {
     .input-group input:focus+label,
     .input-group input:not(:placeholder-shown)+label {
         background: transparent;
-        color:white;
+        color: white;
         top: 12px;
         left: 10px;
         font-size: 12px;
-       
+        padding: 0 5px;
     }
+
 }
