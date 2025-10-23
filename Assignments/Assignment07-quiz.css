@@ -16,7 +16,7 @@
     color: white;
 }
 
-#userName1{
+#userName1 {
     color: white;
 }
 
@@ -65,8 +65,17 @@
 .form-check {
     padding-top: 10px;
     padding-right: 30px;
+    padding-bottom: 10px;
 }
 
+.form-check:hover {
+    cursor: pointer;
+    background-color: #b8e1bae0;
+}
+
+.form-check .form-check-input {
+    margin-left: 30px;
+}
 
 /* next button */
 .next-btn {
