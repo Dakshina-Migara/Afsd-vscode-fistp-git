@@ -54,3 +54,21 @@ function helloworld(val) {
 helloworld(false)
     .then(() => { console.log('success..!') })
     .catch(() => { console.log('error..!') })
+
+
+
+// values add karama
+function helloworld(val) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (val) {
+                resolve('success..!');
+            } else {
+                reject('error..!');
+            }
+        }, 5000)
+    })
+}
+helloworld(false)
+    .then((res) => { console.log(res) })
+    .catch((err) => { console.log(err) })
