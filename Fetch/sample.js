@@ -1,0 +1,56 @@
+
+// sample 
+function Dataget() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    console.log('run');
+}
+
+
+// data sent 
+function Savedata() {
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            title: 'foo',
+            body: 'bar',
+            userId: 1,
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    console.log('hi');
+}
+
+
+
+// promise function
+function helloworld() {
+    return new Promise((resolve, reject) => {
+        resolve();
+    })
+}
+helloworld()
+    .then(() => { console.log('success..!') })
+    .catch(() => { console.log('error..!') })
+
+
+// add a timer
+function helloworld(val) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (val) {
+                resolve();
+            } else {
+                reject();
+            }
+        }, 5000)
+    })
+}
+helloworld(false)
+    .then(() => { console.log('success..!') })
+    .catch(() => { console.log('error..!') })
