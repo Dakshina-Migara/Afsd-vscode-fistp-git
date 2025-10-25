@@ -218,3 +218,136 @@ h3 {
 .carousel-controls-bottom-right button:hover {
   background-color: #fff;
 }
+/* ///////////////// */
+i{
+  color: #50d611;
+  padding: 20px;
+  font-weight: 700;
+}
+.card-section{
+  background-color: #ffffff;
+  position: relative;
+ bottom: 100px;
+ z-index: 999;
+}
+.about-section{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.learn-more-btn{
+  background-color: #fff;
+  color: #50d611;
+  border-radius: 0%;
+  border: #50d611 solid 1px;
+}
+.section-title,.training-title{
+  font-weight: bold;
+}
+.training-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card{
+  margin-bottom: 30px;
+  border-radius: 0%;
+  border-radius: 0%;
+}
+.intake{
+  padding: 40px;
+  background-color: #21b674 !important;
+}
+#join-btn{
+  border-radius: 0%;
+  color: #21b674;
+}
+.bg-cover{
+  background: url("./assets/success-story.jpg");
+}
+.story{
+  background-color: #fff;
+  padding: 50px;
+}
+.story-card{
+  margin-top: 20PX;
+  margin-bottom:30PX ;
+}
+.image-card{
+  position: relative;
+}
+.card-date{
+position: absolute;
+padding: 20px;
+background-color: #21b674;
+color: #fff;
+bottom: 260px;
+justify-items: center;
+}
+
+.play-btn {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.icon-play{
+  position: relative ;
+  left: -5px;
+  color: #ffffff;
+}
+.play-btn:hover {
+ border: #00df13 solid 5px;
+  color: #00df13;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(13, 110, 253, 0.6);
+}
+.event-card,.news-card{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.new-btn , .traing-btn{
+  width: 100px;
+  padding: 10px ;
+  border-radius: 0%;
+  background-color: #21b674 ;
+}
+
+.news-card .card{
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ////footer// */
+.footer {
+  background-color: #1b2940;
+  color: #ccc;
+  /* padding: 40px 0 0; */
+}
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #00c48a;
+}
+.footer .logo img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.footer .social-icons a {
+  color: #00c48a;
+  margin-left: 15px;
+  font-size: 18px;
+}
+.footer-bottom-side {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  /* padding: 15px 0; */
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+.fa-calendar,.fa-pen-to-square,.fa-address-book,.fa-circle-user{
+  font-size: 50px;
+}

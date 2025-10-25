@@ -6,45 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 05</title>
     <link rel="stylesheet" href="../Assignments/jhfusjf.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
-        <div class="login-box">
-            <div class="logo"></div>
-            <h2>Welcome Back</h2>
-            <form>
-                <!-- Username with floating label -->
-                <div class="input-group">
-                    <input type="text" id="username" placeholder="" required>
-                    <label for="username">Username</label>
+
+
+
+
+
+    <div class="about-container">
+        <div class="about">
+            <div class="blackCard"></div>
+            <div class="carousel slide vertical hero-slider" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="hero-content">
+                                        <h1 class="hero-title">
+                                            Trained by Real Industry Professionals
+                                        </h1>
+                                        <p>
+                                            All programs are led by experienced developers, marketers,
+                                            logistics and admin experts to ensure real-world job
+                                            readiness.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="hero-content">
+                                        <h1 class="hero-title">Hands-On Learning Experience</h1>
+                                        <p>
+                                            Our curriculum focuses on practical skills with real-world
+                                            projects that prepare you for today's job market.
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Explore Courses</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="hero-content">
+                                        <h1 class="hero-title">Career Support & Placement</h1>
+                                        <p>
+                                            We provide comprehensive career services including resume
+                                            building, interview preparation, and job placement
+                                            assistance.
+                                        </p>
+                                        <button type="button" class="btn btn-primary">Primary</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Password with floating label -->
-                <div class="input-group password-box">
-                    <input type="password" id="password" placeholder=" " required>
-                    <label for="password">Password</label>
-                    <span class="toggle-password">👁</span>
+                <div class="prevbtn">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="prev left">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="next right">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-
-                <div class="options">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="">Forgot Password</a>
+                <div class="carousel-indicators indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0"
+                        class="active courserbtn"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        class="courserbtn"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        class="courserbtn"></button>
                 </div>
+            </div>
 
-                <button type="submit" class="btn">Sign In</button>
-
-                <div class="divider"><span>or</span></div>
-
-                <button type="button" class="google-btn">
-                    <img src="../assets/google.png" alt="Google Logo">Sign in with Google
-                </button>
-
-                <p class="signup">Don’t have an account? <a href="#">Sign Up</a></p>
-            </form>
+            <img src="../assets/cover poto acpt.jpg" class="aboutImg" alt="aboutImg" />
         </div>
-        <div class="image-box"></div>
     </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
