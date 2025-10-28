@@ -29,31 +29,31 @@ function Savedata() {
 
 
 // promise function
-function helloworld() {
-    return new Promise((resolve, reject) => {
-        resolve();
-    })
-}
-helloworld()
-    .then(() => { console.log('success..!') })
-    .catch(() => { console.log('error..!') })
+// function helloworld() {
+//     return new Promise((resolve, reject) => {
+//         resolve();
+//     })
+// }
+// helloworld()
+//     .then(() => { console.log('success..!') })
+//     .catch(() => { console.log('error..!') })
 
 
-// add a timer
-function helloworld(val) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (val) {
-                resolve();
-            } else {
-                reject();
-            }
-        }, 5000)
-    })
-}
-helloworld(false)
-    .then(() => { console.log('success..!') })
-    .catch(() => { console.log('error..!') })
+// // add a timer
+// function helloworld(val) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (val) {
+//                 resolve();
+//             } else {
+//                 reject();
+//             }
+//         }, 5000)
+//     })
+// }
+// helloworld(false)
+//     .then(() => { console.log('success..!') })
+//     .catch(() => { console.log('error..!') })
 
 
 
@@ -66,9 +66,23 @@ function helloworld(val) {
             } else {
                 reject('error..!');
             }
-        }, 5000)
+        }, 2000)
     })
 }
-helloworld(false)
-    .then((res) => { console.log(res) })
-    .catch((err) => { console.log(err) })
+// helloworld(false)
+//     .then((res) => { console.log(res) })
+//     .catch((err) => { console.log(err) })
+
+
+// Async await
+async function getHallow() {
+    try {
+        const val1 = await helloworld(true);
+        const val2 = await helloworld(false);
+        const val3 = await helloworld(true);
+        console.log(val1);
+    } catch (err) {
+        console.log(err)
+    }
+}
+getHallow();
