@@ -1,40 +1,41 @@
 async function loadCompanies() {
-    const response = await fetch('https://student-api.acpt.lk/api/companies'); // Replace with your API URL
+    const response = await fetch('https://student-api.acpt.lk/api/companies');
     const companies = await response.json();
 
     const container = document.getElementById('companyDropdowns');
     container.innerHTML = '';
 
-    // Create a dropdown for each company
-    companies.forEach((company, index) => {
-        // Create column wrapper
-        const colDiv = document.createElement('div');
-        colDiv.className = '';
+    // Create single column wrapper
+    const colDiv = document.createElement('div');
+    colDiv.className = 'col-12 col-md-8 col-lg-6 mx-auto';
 
-        // Create dropdown div
-        const dropdownDiv = document.createElement('div');
-        dropdownDiv.className = 'dropdown company-dropdown';
+    // Create single dropdown div
+    const dropdownDiv = document.createElement('div');
+    dropdownDiv.className = 'dropdown company-dropdown';
 
-        // Create button with company name
-        const button = document.createElement('button');
-        button.className = 'btn btn-secondary dropdown-toggle w-20';
-        button.type = 'button';
-        button.setAttribute('data-bs-toggle', 'dropdown');
-        button.setAttribute('aria-expanded', 'false');
-        button.id = `company-${index}`;
+    // Create button
+    const button = document.createElement('button');
+    button.className = 'btn btn-secondary dropdown-toggle w-100';
+    button.type = 'button';
+    button.setAttribute('data-bs-toggle', 'dropdown');
+    button.setAttribute('aria-expanded', 'false');
+    button.id = 'companiesDropdown';
+    button.textContent = 'Company';
 
-        // Button text with company name 
-        const companyName = document.createElement('span');
-        companyName.className = 'company-name';
-        companyName.textContent = company.company;
+    // Create dropdown menu
+    const ul = document.createElement('ul');
+    ul.className = 'dropdown-menu w-100';
+    ul.setAttribute('aria-labelledby', 'companiesDropdown');
 
-        button.appendChild(companyName);
-        button.appendChild(document.createElement('br'));
-
-        // Create dropdown menu
-        const ul = document.createElement('ul');
-        ul.className = 'dropdown-menu';
-        ul.setAttribute('aria-labelledby', `company-${index}`);
+    // Add each company and its departments
+    companies.forEach((company) => {
+        // Add company header
+        const companyHeader = document.createElement('li');
+        const companyHeaderSpan = document.createElement('h6');
+        companyHeaderSpan.className = 'dropdown-header';
+        companyHeaderSpan.textContent = company.company;
+        companyHeader.appendChild(companyHeaderSpan);
+        ul.appendChild(companyHeader);
 
         // Check if company has departments
         if (company.departments && company.departments.length > 0) {
@@ -42,14 +43,13 @@ async function loadCompanies() {
             company.departments.forEach(department => {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
-                a.className = 'dropdown-item';
-
-                // Department name
-                a.innerHTML = `${department.name}`;
+                a.className = 'dropdown-item ps-4';
+                a.textContent = department.name;
 
                 // Handle click event
                 a.addEventListener('click', function (e) {
                     e.preventDefault();
+                    button.textContent = `${company.company} - ${department.name}`;
                     showDepartmentInfo(company, department);
                 });
 
@@ -60,22 +60,23 @@ async function loadCompanies() {
             // If no departments, show a message
             const li = document.createElement('li');
             const span = document.createElement('span');
-            span.className = 'dropdown-item-text text-muted';
-            span.textContent = 'No departments available';
+            span.className = 'dropdown-item-text text-muted ps-4';
+            span.textContent = 'No departments';
             li.appendChild(span);
             ul.appendChild(li);
         }
-
-        // Append button and menu to dropdown div
-        dropdownDiv.appendChild(button);
-        dropdownDiv.appendChild(ul);
-
-        // Append to column
-        colDiv.appendChild(dropdownDiv);
-
-        // Append column to container
-        container.appendChild(colDiv);
     });
+
+    // Append button and menu to dropdown div
+    dropdownDiv.appendChild(button);
+    dropdownDiv.appendChild(ul);
+
+    // Append to column
+    colDiv.appendChild(dropdownDiv);
+
+    // Append column to container
+    container.appendChild(colDiv);
+
 }
 // Load companies when page loads
 document.addEventListener('DOMContentLoaded', loadCompanies);
